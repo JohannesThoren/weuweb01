@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+
+#nav_btns {
+    text-align: right;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    margin-top: 6px;
+}
+
+#nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(60, 60, 60);
+    padding: 5px;
+}
+
+#contact {
+    text-align: right;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    margin-top: 6px;
+    margin-right: 10px;
+    /* border: 1px solid; */
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#title {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
