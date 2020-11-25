@@ -1,0 +1,82 @@
+body {
+  color: black;
+  background-color: rgb(254, 254, 254);
+}
+
+#title {
+  animation: ani infinite linear 1s;
+}
+
+#content {
+  display: block;
+
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+  padding: 10px;
+}
+
+.item {
+  display: inline-flexbox;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  height: 50px;
+
+  margin-bottom: 10px;
+  border: 1px solid black;
+
+  transition: 0.5s;
+}
+
+.item .title {
+  font-size: 2em;
+  margin: 10px;
+  text-align: center;
+}
+
+.item .text {
+  font-size: 0px;
+}
+
+.item:hover .text {
+  font-size: 1em;
+}
+.item:hover {
+  width: 50%;
+  height: fit-content;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+
+  background-color: white;
+
+  border: 1px solid black;
+
+  padding: 2px;
+
+  box-shadow: 0 2px 4px 0 black;
+
+  cursor: default;
+}
+
+@keyframes ani {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

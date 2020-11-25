@@ -1,0 +1,33 @@
+body {
+    background-color: green;
+}
+#main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.item .img{
+    object-fit: contain;
+    width: 500px;
+}
+
+.item .text {
+    z-index: 2;
+    position: absolute;
+    transform: translateX(-280px);
+    color: white;
+    visibility: hidden;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.item:hover .text{
+    visibility: visible;
+}
+
+.item:hover .img {
+    filter: blur(10px);
+}
