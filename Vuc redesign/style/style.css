@@ -1,109 +1,138 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-button {
-    margin: 0rem;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #banner {
-    background-image: url("../res/vucbg.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 50%;
-    max-height: 600px;
-    border-bottom: #006dff solid 10px;
-    box-shadow: #006dff 0 0.5rem 1rem 0;
+  background-image: url("../res/vucbg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 50%;
+  max-height: 37.5rem;
+  border-bottom: #006eb4 solid 0.625rem;
+  box-shadow: #006eb4 0 8px 16px 0;
 }
 
 #banner #title {
-    height: fit-content;
-    height: -moz-fit-content;
-    height: -webkit-fit-content;
-    width: 150px;
-    display: flex;
+  height: fit-content;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  width: 150px;
+  display: flex;
 }
 
 #banner #title img {
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-    contain: content;
-    width: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  contain: content;
+  width: 50px;
 }
 
 #banner #title span {
-    color: white;
-    font-size: 1.2em;
-    margin-top: 10%;
-    text-decoration: underline;
+  color: white;
+  font-size: 1.2em;
+  margin-top: 10%;
+  text-decoration: underline;
 }
 
 #banner #moto {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    height: -moz-fit-content;
-    width: -moz-fit-content;
-    padding: 10px;
-    font-size: 2em;
-    color: white;
-    border: 2px solid white;
-
-    border-top-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: -moz-fit-content;
+  width: -moz-fit-content;
+  padding: 0.625rem;
+  font-size: 2em;
+  color: white;
+  border: 0.125rem solid white;
+  border-top-left-radius: 3.75rem;
+  border-bottom-right-radius: 3.75rem;
 }
 
 #content {
-    background-color: #006dff;
-    width: 70%;
-    height: fit-content;
-    height: -moz-fit-content;
-    height: -webkit-fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.625rem;
-    box-shadow: #006dff 0 0.5rem 1rem 0;
+  background-color: #006eb4;
+  width: 80%;
+  height: fit-content;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.625rem;
+  box-shadow: #006eb4 0 0.5rem 1rem 0;
+}
+#navContainer {
+  z-index: 100;
+
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 #nav {
-    text-align: center;
-    width: 50;
-    height: 50;
-    margin-left: auto;
-    float: right;
-    background-color: #006dff;
-    position: sticky;
-    top: 0;
-    transition: 0.5s;
+  position: absolute;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+
+  width: 50;
+  height: 50;
+  background-color: #006eb4;
+  top: 0;
+  transition: 0.2s;
+  transition-delay: 0.4s display;
 }
 
 #nav:hover {
-    width: 300px;
+  width: 18.75rem;
+  height: fit-content;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+}
+
+@media screen and (max-width: 800px) {
+  #banner {
+    font-size: 0.8em;
+    height: 20%;
+  }
+
+  #banner #title {
     height: fit-content;
     height: -moz-fit-content;
     height: -webkit-fit-content;
-}
+    width: 9.375rem;
+    display: flex;
+  }
 
-#nav ul {
-    list-style-type: none;
-}
+  #banner #title img {
+    margin-left: 0.625rem;
+    margin-top: 0.625rem;
+    margin-right: 0.625rem;
+    contain: content;
+    width: 2.5rem;
+  }
 
-.navItems {
-    text-decoration: none;
-    font-size: 0;   
-    visibility: hidden;
-    transition: 0.2s;
-}
+  #banner #moto {
+      visibility: hidden;
+  }
 
-#nav:hover .navItems {
-    font-size: 1em;
-    visibility: visible;
-    height: 400px;
+  #nav {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  #content {
+    width: 90%;
+  }
 }

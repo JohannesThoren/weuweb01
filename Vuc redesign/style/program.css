@@ -1,84 +1,77 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 img {
-    width: 18.75rem;
-    contain: content;
+  width: 18.75rem;
+  contain: content;
 }
 
-#header {
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgb(230, 210, 0);
-    ;
-    color: white;
-    text-align: center;
-    text-decoration: underline;
-    padding: 0.625rem;
-    font-size: 1.5em;
-    font-weight: 600;
-    width: 90%;
+#program {
+  width: 100%;
 }
 
-.item {
-    color: white;
-
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    min-height: 12.5rem;
-    width: 90%;
-    min-height: 500px;
-    box-shadow: 0 4px 8px 0 black;
+#program #header {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #d7b400;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  font-size: 1.5em;
+  font-weight: 600;
+  width: 100%;
 }
 
-.item .banner {
-    contain: content;
+#program .item {
+  color: white;
+
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  min-height: 12.5rem;
+  width: 90%;
+  min-height: 500px;
+  box-shadow: 0 4px 8px 0 black;
 }
 
-.item .banner img {
-    width: 100%;
+#program .item .banner {
+  contain: content;
 }
 
-.title {
-    width: 100%;
-    text-align: center;
-    background-color: rgb(230, 210, 0);
-    font-weight: 600;
-    font-size: 1.5em;
-    text-decoration: underline;
+#program .item .banner img {
+  width: 100%;
 }
 
-#program-grid {
-    display: grid;
-    padding: 0.625rem;
-    grid-template-columns: 1fr 1fr 1fr;
+#program .title {
+  padding: 2px;
+  width: 100%;
+  text-align: center;
+  background-color: #d7b400;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-decoration: underline;
 }
 
-#content {
-    background-color: #006dff;
-    width: 90%;
-    height: fit-content;
-    height: -moz-fit-content;
-    height: -webkit-fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0.625rem;
-    box-shadow: #006dff 0 0.5rem 1rem 0;
+#program #program-grid {
+  display: grid;
+  padding: 0.625rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 1200px) {
+  #program #program-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    #program-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #program-grid {
-        grid-template-columns: 1fr;
-    }
+  #program #program-grid {
+    grid-template-columns: 1fr;
+  }
 }

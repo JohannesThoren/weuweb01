@@ -1,0 +1,13 @@
+#skolan #header {
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #d7b400;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 0.125rem;
+    padding-top: 0.125rem;
+    font-size: 1.5em;
+    font-weight: 600;
+    width: 100%;
+  }

@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/skolan.css">
+    <link rel="stylesheet" href="../style/program.css">
 </head>
 
 <body>
-
+    <div id="navContainer">
+        <div id="nav">
+            <div>
+                <a href="#program"> Våra Program</a>
+                <a href="#skolan">Mer Om Skolan</a>
+                <a href="http://"> För Elever</a>
+                <a href="http://"> Personal På Skolan</a>
+            </div>
+        </div>
+    </div>
 
     <div id="banner">
         <div id="title">
@@ -22,21 +33,43 @@
                 En liten skola <br>med stora möjligheter
             </p>
         </div>
-        <div id="nav">
-            <ul>
-                <li><a class="navItems" href="#program"> Våra Program</a></li>
-                <li><a class="navItems" href="#skolan">Mer Om Skolan</a></li>
-                <li><a class="navItems" href="http://"> För Elever</a></li>
-                <li><a class="navItems" href="http://"> Personal På Skolan</a></li>
-            </ul>
 
-        </div>
     </div>
 
 
     <div id="content">
-        <iframe id="program" src="program.html" frameborder="0" width="100%" height="100%"></iframe>
-        <iframe id="skolan" rc="skolan.html" frameborder="0" width="100%" , height="100%"></iframe>
+        <div id="program">
+            <div id="header">
+                <span>Våra Program</span>
+            </div>
+            <div id="program-grid">
+                <a href="/views/program/teknik.html" target="_top" class="item">
+                    <div class="banner">
+                        <img src="https://i.pinimg.com/originals/25/e7/2c/25e72c6653f86d62535cac3458af63cd.jpg" alt="">
+                        <div class="title">Teknik</div>
+                    </div>
+                </a>
+                <a href="program/industri.html" target="_top" class="item">
+                    <div class="banner">
+                        <img src="https://f.nordiskemedier.dk/2cvl5q5foe2i8pyb.jpg" alt="">
+                        <div class="title">Industri</div>
+                    </div>
+                </a>
+                <a href="program/fordon.html" target="_top" class="item">
+                    <div class="banner">
+                        <img src="https://stfg.stockholm.se/sites/default/files/styles/ssk_gallery_image/public/lbmek.png?itok=sisvduzu"
+                            alt="">
+                        <div class="title">Fordon</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="skolan">
+            <div id="header">
+                <span>Mer Om Skolan</span>
+            </div>  
+        </div>
     </div>
 
 
