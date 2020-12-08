@@ -85,20 +85,37 @@ body {
   margin: 0;
   padding: 0;
   justify-content: center;
-
-  width: 50;
-  height: 50;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: #006eb4;
   top: 0;
-  transition: 0.2s;
+  transition: 0.5s;
   transition-delay: 0.4s display;
+
+  box-shadow: 0 5px 10px 0 black;
+
+  text-align: center;
+}
+
+#icon-big {
+  fill: #fff;
+}
+
+#navConten {
+  visibility: hidden;
 }
 
 #nav:hover {
   width: 18.75rem;
+  min-height: 300px;
   height: fit-content;
   height: -moz-fit-content;
   height: -webkit-fit-content;
+  
+}
+
+#nav:hover #navConten{
+  visibility: visible;
 }
 
 @media screen and (max-width: 800px) {
@@ -134,5 +151,12 @@ body {
 
   #content {
     width: 90%;
+  }
+
+  #close {
+    width: 40px;
+  
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
